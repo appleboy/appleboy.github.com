@@ -5,6 +5,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>jQuery Event API</title>
     <link href="http://twitter.github.com/bootstrap/assets/css/bootstrap.css" media="screen" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.slideShow {
+    width: 900px;
+    height: 420px;
+    position: relative;
+    overflow: hidden;
+}
+
+.slides {
+    margin: 0;
+    list-style: none;
+}
+
+.pager {
+    position: relative;
+    top: 380px;
+}
+
+</style>
 <script type="text/javascript">
 
   var _gaq = _gaq || [];
@@ -25,6 +45,71 @@
         <h1>jQuery SlideShow Plugin</h1>
     </div>
     <p>This simple slideshow plugin will provide your effect gallery.</p>
+    <div class="slideShow">
+        <ul class="slides">
+            <li class="slide"><a href="#" target="_self"><img src="900_360_2815b8f28c58175b52b535bf51f3e692.png" border="0" alt="" width="900" height="360" /></a></li>
+            <li class="slide"><a href="#" target="_self"><img src="900_360_46d09a37f76f27815daafc4b96e46399.png" border="0" alt="" width="900" height="360" /></a></li>
+            <li class="slide"><a href="#" target="_self"><img src="900_360_cae9a566a9a5e3a42af8b04f2ea299a0.png" border="0" alt="" width="900" height="360" /></a></li>
+            <li class="slide"><a href="#" target="_self"><img src="900_360_dd9bb48bc247ee3f8358bea788e08ce0.png" border="0" alt="" width="900" height="360" /></a></li>
+            <li class="slide"><a href="#" target="_self"><img src="900_360_63fa2bcabc296f47758d6aaebf23a530.png" border="0" alt="" width="900" height="360" /></a></li>
+        </ul>
+        <ul class="pager">
+            <li><a href="javascript:void(0);" class="prev">Previous</a></li>
+            <li><a href="javascript:void(0);" class="next">Next</a></li>
+        </ul>
+    </div>
+    <div class="page-header">
+        <h1>html source code</h1>
+    </div>
+    <code>
+<pre style='color:#000000;background:#ffffff;'><span style='color:#a65700; '>&lt;</span><span style='color:#800000; font-weight:bold; '>div</span><span style='color:#274796; '> </span><span style='color:#074726; '>class</span><span style='color:#808030; '>=</span><span style='color:#0000e6; '>"slideShow"</span><span style='color:#a65700; '>></span>
+    <span style='color:#a65700; '>&lt;</span><span style='color:#800000; font-weight:bold; '>ul</span><span style='color:#274796; '> </span><span style='color:#074726; '>class</span><span style='color:#808030; '>=</span><span style='color:#0000e6; '>"slides"</span><span style='color:#a65700; '>></span>
+        <span style='color:#a65700; '>&lt;</span><span style='color:#800000; font-weight:bold; '>li</span><span style='color:#274796; '> </span><span style='color:#074726; '>class</span><span style='color:#808030; '>=</span><span style='color:#0000e6; '>"slide"</span><span style='color:#a65700; '>></span><span style='color:#a65700; '>&lt;</span><span style='color:#800000; font-weight:bold; '>img</span><span style='color:#274796; '> </span><span style='color:#074726; '>src</span><span style='color:#808030; '>=</span><span style='color:#0000e6; '>"900_360_2815b8f28c58175b52b535bf51f3e692.png"</span><span style='color:#274796; '> </span><span style='color:#074726; '>width</span><span style='color:#808030; '>=</span><span style='color:#0000e6; '>"900"</span><span style='color:#274796; '> </span><span style='color:#074726; '>height</span><span style='color:#808030; '>=</span><span style='color:#0000e6; '>"360"</span><span style='color:#274796; '> </span><span style='color:#a65700; '>/></span><span style='color:#a65700; '>&lt;/</span><span style='color:#800000; font-weight:bold; '>a</span><span style='color:#a65700; '>></span><span style='color:#a65700; '>&lt;/</span><span style='color:#800000; font-weight:bold; '>li</span><span style='color:#a65700; '>></span>
+        <span style='color:#a65700; '>&lt;</span><span style='color:#800000; font-weight:bold; '>li</span><span style='color:#274796; '> </span><span style='color:#074726; '>class</span><span style='color:#808030; '>=</span><span style='color:#0000e6; '>"slide"</span><span style='color:#a65700; '>></span><span style='color:#a65700; '>&lt;</span><span style='color:#800000; font-weight:bold; '>img</span><span style='color:#274796; '> </span><span style='color:#074726; '>src</span><span style='color:#808030; '>=</span><span style='color:#0000e6; '>"900_360_46d09a37f76f27815daafc4b96e46399.png"</span><span style='color:#274796; '> </span><span style='color:#074726; '>width</span><span style='color:#808030; '>=</span><span style='color:#0000e6; '>"900"</span><span style='color:#274796; '> </span><span style='color:#074726; '>height</span><span style='color:#808030; '>=</span><span style='color:#0000e6; '>"360"</span><span style='color:#274796; '> </span><span style='color:#a65700; '>/></span><span style='color:#a65700; '>&lt;/</span><span style='color:#800000; font-weight:bold; '>a</span><span style='color:#a65700; '>></span><span style='color:#a65700; '>&lt;/</span><span style='color:#800000; font-weight:bold; '>li</span><span style='color:#a65700; '>></span>
+        <span style='color:#a65700; '>&lt;</span><span style='color:#800000; font-weight:bold; '>li</span><span style='color:#274796; '> </span><span style='color:#074726; '>class</span><span style='color:#808030; '>=</span><span style='color:#0000e6; '>"slide"</span><span style='color:#a65700; '>></span><span style='color:#a65700; '>&lt;</span><span style='color:#800000; font-weight:bold; '>img</span><span style='color:#274796; '> </span><span style='color:#074726; '>src</span><span style='color:#808030; '>=</span><span style='color:#0000e6; '>"900_360_cae9a566a9a5e3a42af8b04f2ea299a0.png"</span><span style='color:#274796; '> </span><span style='color:#074726; '>width</span><span style='color:#808030; '>=</span><span style='color:#0000e6; '>"900"</span><span style='color:#274796; '> </span><span style='color:#074726; '>height</span><span style='color:#808030; '>=</span><span style='color:#0000e6; '>"360"</span><span style='color:#274796; '> </span><span style='color:#a65700; '>/></span><span style='color:#a65700; '>&lt;/</span><span style='color:#800000; font-weight:bold; '>a</span><span style='color:#a65700; '>></span><span style='color:#a65700; '>&lt;/</span><span style='color:#800000; font-weight:bold; '>li</span><span style='color:#a65700; '>></span>
+        <span style='color:#a65700; '>&lt;</span><span style='color:#800000; font-weight:bold; '>li</span><span style='color:#274796; '> </span><span style='color:#074726; '>class</span><span style='color:#808030; '>=</span><span style='color:#0000e6; '>"slide"</span><span style='color:#a65700; '>></span><span style='color:#a65700; '>&lt;</span><span style='color:#800000; font-weight:bold; '>img</span><span style='color:#274796; '> </span><span style='color:#074726; '>src</span><span style='color:#808030; '>=</span><span style='color:#0000e6; '>"900_360_dd9bb48bc247ee3f8358bea788e08ce0.png"</span><span style='color:#274796; '> </span><span style='color:#074726; '>width</span><span style='color:#808030; '>=</span><span style='color:#0000e6; '>"900"</span><span style='color:#274796; '> </span><span style='color:#074726; '>height</span><span style='color:#808030; '>=</span><span style='color:#0000e6; '>"360"</span><span style='color:#274796; '> </span><span style='color:#a65700; '>/></span><span style='color:#a65700; '>&lt;/</span><span style='color:#800000; font-weight:bold; '>a</span><span style='color:#a65700; '>></span><span style='color:#a65700; '>&lt;/</span><span style='color:#800000; font-weight:bold; '>li</span><span style='color:#a65700; '>></span>
+        <span style='color:#a65700; '>&lt;</span><span style='color:#800000; font-weight:bold; '>li</span><span style='color:#274796; '> </span><span style='color:#074726; '>class</span><span style='color:#808030; '>=</span><span style='color:#0000e6; '>"slide"</span><span style='color:#a65700; '>></span><span style='color:#a65700; '>&lt;</span><span style='color:#800000; font-weight:bold; '>img</span><span style='color:#274796; '> </span><span style='color:#074726; '>src</span><span style='color:#808030; '>=</span><span style='color:#0000e6; '>"900_360_63fa2bcabc296f47758d6aaebf23a530.png"</span><span style='color:#274796; '> </span><span style='color:#074726; '>width</span><span style='color:#808030; '>=</span><span style='color:#0000e6; '>"900"</span><span style='color:#274796; '> </span><span style='color:#074726; '>height</span><span style='color:#808030; '>=</span><span style='color:#0000e6; '>"360"</span><span style='color:#274796; '> </span><span style='color:#a65700; '>/></span><span style='color:#a65700; '>&lt;/</span><span style='color:#800000; font-weight:bold; '>a</span><span style='color:#a65700; '>></span><span style='color:#a65700; '>&lt;/</span><span style='color:#800000; font-weight:bold; '>li</span><span style='color:#a65700; '>></span>
+    <span style='color:#a65700; '>&lt;/</span><span style='color:#800000; font-weight:bold; '>ul</span><span style='color:#a65700; '>></span>
+    <span style='color:#a65700; '>&lt;</span><span style='color:#800000; font-weight:bold; '>ul</span><span style='color:#274796; '> </span><span style='color:#074726; '>class</span><span style='color:#808030; '>=</span><span style='color:#0000e6; '>"pager"</span><span style='color:#a65700; '>></span>
+        <span style='color:#a65700; '>&lt;</span><span style='color:#800000; font-weight:bold; '>li</span><span style='color:#a65700; '>></span><span style='color:#a65700; '>&lt;</span><span style='color:#800000; font-weight:bold; '>a</span><span style='color:#274796; '> </span><span style='color:#074726; '>href</span><span style='color:#808030; '>=</span><span style='color:#0000e6; '>"javascript:void(0);"</span><span style='color:#274796; '> </span><span style='color:#074726; '>class</span><span style='color:#808030; '>=</span><span style='color:#0000e6; '>"prev"</span><span style='color:#a65700; '>></span>Previous<span style='color:#a65700; '>&lt;/</span><span style='color:#800000; font-weight:bold; '>a</span><span style='color:#a65700; '>></span><span style='color:#a65700; '>&lt;/</span><span style='color:#800000; font-weight:bold; '>li</span><span style='color:#a65700; '>></span>
+        <span style='color:#a65700; '>&lt;</span><span style='color:#800000; font-weight:bold; '>li</span><span style='color:#a65700; '>></span><span style='color:#a65700; '>&lt;</span><span style='color:#800000; font-weight:bold; '>a</span><span style='color:#274796; '> </span><span style='color:#074726; '>href</span><span style='color:#808030; '>=</span><span style='color:#0000e6; '>"javascript:void(0);"</span><span style='color:#274796; '> </span><span style='color:#074726; '>class</span><span style='color:#808030; '>=</span><span style='color:#0000e6; '>"next"</span><span style='color:#a65700; '>></span>Next<span style='color:#a65700; '>&lt;/</span><span style='color:#800000; font-weight:bold; '>a</span><span style='color:#a65700; '>></span><span style='color:#a65700; '>&lt;/</span><span style='color:#800000; font-weight:bold; '>li</span><span style='color:#a65700; '>></span>
+    <span style='color:#a65700; '>&lt;/</span><span style='color:#800000; font-weight:bold; '>ul</span><span style='color:#a65700; '>></span>
+<span style='color:#a65700; '>&lt;/</span><span style='color:#800000; font-weight:bold; '>div</span><span style='color:#a65700; '>></span>
+</pre>
+    </code>
+    <div class="page-header">
+        <h1>jQuery</h1>
+    </div>
+    <code>
+<pre style='color:#000000;background:#ffffff;'><span style='color:#808030; '>&lt;</span>script src<span style='color:#808030; '>=</span><span style='color:#800000; '>"</span><span style='color:#0000e6; '>http://cdnjs.cloudflare.com/ajax/libs/jquery/1.7.2/jquery.min.js</span><span style='color:#800000; '>"</span><span style='color:#808030; '>></span><span style='color:#808030; '>&lt;</span><span style='color:#808030; '>/</span>script<span style='color:#808030; '>></span>
+<span style='color:#808030; '>&lt;</span>script src<span style='color:#808030; '>=</span><span style='color:#800000; '>"</span><span style='color:#0000e6; '>https://raw.github.com/appleboy/jquery.slideShow/master/src/jquery.slideshow.min.js</span><span style='color:#800000; '>"</span><span style='color:#808030; '>></span><span style='color:#808030; '>&lt;</span><span style='color:#808030; '>/</span>script<span style='color:#808030; '>></span>
+<span style='color:#808030; '>&lt;</span>script<span style='color:#808030; '>></span>
+<span style='color:#808030; '>(</span><span style='color:#800000; font-weight:bold; '>function</span> <span style='color:#808030; '>(</span>$<span style='color:#808030; '>)</span> <span style='color:#800080; '>{</span>
+    $<span style='color:#808030; '>(</span><span style='color:#0000e6; '>'.slideShow'</span><span style='color:#808030; '>)</span><span style='color:#808030; '>.</span>slideShow<span style='color:#808030; '>(</span><span style='color:#800080; '>{</span>
+        interval<span style='color:#800080; '>:</span> <span style='color:#008c00; '>3</span><span style='color:#808030; '>,</span>
+        start<span style='color:#800080; '>:</span> <span style='color:#0000e6; '>'random'</span><span style='color:#808030; '>,</span>
+        transition<span style='color:#800080; '>:</span> <span style='color:#800080; '>{</span>
+            mode<span style='color:#800080; '>:</span> <span style='color:#0000e6; '>'slideshow'</span><span style='color:#808030; '>,</span>
+            speed<span style='color:#800080; '>:</span> <span style='color:#008c00; '>800</span>
+        <span style='color:#800080; '>}</span>
+    <span style='color:#800080; '>}</span><span style='color:#808030; '>)</span><span style='color:#800080; '>;</span>
+<span style='color:#800080; '>}</span><span style='color:#808030; '>)</span><span style='color:#808030; '>(</span>jQuery<span style='color:#808030; '>)</span><span style='color:#800080; '>;</span>
+<span style='color:#808030; '>&lt;</span><span style='color:#808030; '>/</span>script<span style='color:#808030; '>></span>
+</pre>
+    </code>
+
+    <div class="page-header">
+        <h1>CSS</h1>
+    </div>
+    <code>
+<pre style='color:#000000;background:#ffffff;'><span style='color:#808030; '>.</span>slideShow <span style='color:#800080; '>{</span>
+    <span style='color:#bb7977; font-weight:bold; '>width</span><span style='color:#808030; '>:</span> <span style='color:#008c00; '>900</span><span style='color:#006600; '>px</span><span style='color:#800080; '>;</span>
+    <span style='color:#bb7977; font-weight:bold; '>height</span><span style='color:#808030; '>:</span> <span style='color:#008c00; '>420</span><span style='color:#006600; '>px</span><span style='color:#800080; '>;</span>
+    <span style='color:#bb7977; font-weight:bold; '>position</span><span style='color:#808030; '>:</span> <span style='color:#074726; '>relative</span><span style='color:#800080; '>;</span>
+    <span style='color:#bb7977; font-weight:bold; '>overflow</span><span style='color:#808030; '>:</span> <span style='color:#074726; '>hidden</span><span style='color:#800080; '>;</span>
+<span style='color:#800080; '>}</span>
+</pre>
+    </code>
 
     <script type="text/javascript"><!--
     google_ad_client = "ca-pub-8029787021384054";
@@ -42,7 +127,14 @@
 <script src="https://raw.github.com/appleboy/jquery.slideShow/master/src/jquery.slideshow.min.js"></script>
 <script>
 (function ($) {
-
+    $('.slideShow').slideShow({
+        interval: 3,
+        start: 'random',
+        transition: {
+            mode: 'slideshow',
+            speed: 800
+        }
+    });
 })(jQuery);
 </script>
 </body>
